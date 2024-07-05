@@ -8,7 +8,7 @@ from textual.logging import TextualHandler
 from textual.containers import Container
 
 from stut.UI.appUI import AppUI
-
+from stut.audio import device_audio_recorder as darec
 
 logging.basicConfig(
     level="NOTSET",
