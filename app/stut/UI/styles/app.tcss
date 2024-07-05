@@ -1,0 +1,141 @@
+# Textual CSS file
+# Documentation: https://textual.textualize.io/guide/CSS/
+
+# ##########################
+
+Screen {
+    align: center middle;
+}
+  
+# ###########################
+
+Header {
+    dock: top;
+    height: 3;
+    content-align: center middle;
+    background: grey;
+    color: white;
+}
+
+Footer {
+    dock: bottom;
+    height: 1;
+    content-align: center middle;
+}
+
+# ###########################
+
+Input {
+    width: 24;
+    height: 3;
+}
+
+# ###########################
+
+Message {
+    height: 3;
+}
+  
+# ##########################
+#input_field {
+    min-width: 85%;
+    max-width: 100%;
+    width: auto;
+    height: 3;
+    text-style: bold;
+    dock: left;
+}
+
+#input_field:focus {
+    background: #00FF00FA;
+}
+
+#input_field:hover {
+    background: #00FF0088;
+}
+
+
+# ##########################
+
+#submit_button {
+    width: auto;
+    height: 3;
+    text-style: bold;
+    dock: right;
+}
+
+#submit_button:focus {
+    background: #00FF00FA;
+}
+
+#submit_button:hover {
+    background: #00FF0088;
+}
+
+# ##########################
+
+#messages_scrollable {
+    # width: 100%;
+    # height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.label_message {
+    min-height: 3;
+    width: auto;
+    min-width: 20%;
+    height: auto;
+}
+
+.from_me {
+    dock: right;
+    border: round #33E933FA 85%;
+    border-title-background: #33E933FA;
+    border-title-color: black;
+    border-title-style: bold;
+    text-align: left;
+}
+
+.to_me {
+    dock: left;
+    border: round #1D1DEFEA 85%;
+    border-title-background: #1D1DEFEA;
+    border-title-color: black;
+    border-title-style: bold;
+    text-align: right;
+}
+
+#output_zone {
+    min-height: 40%;
+}
+
+#status_chat_zone {
+    min-height: 1;
+    max-height: 6%;
+    height: auto;
+    align: center bottom;
+}
+
+#input_zone {
+    height: 4;
+}
+
+.ui_label_header {
+    height: 1;
+    width: 100%;
+    text-align: center;
+    text-style: bold;
+    background: #A0D1FFEA;
+    color: black;
+    align: center top;
+    margin-bottom: 1;
+}
+
+.send_button {
+    height: 4;
+    min-width: 15%;
+    max-width: 20%;
+    width: auto;
+}
+
