@@ -4,9 +4,10 @@
 import logging
 from textual.app import App, ComposeResult
 from textual.widgets import Header, Footer
-from textual.containers import Vertical, Horizontal, VerticalScroll, HorizontalScroll, Container
-from textual import events
 from textual.logging import TextualHandler
+from textual.containers import Container
+
+from stut.UI.appUI import AppUI
 
 
 logging.basicConfig(
@@ -15,10 +16,16 @@ logging.basicConfig(
 )
 
 class StutApp(App):
-    
+
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
     
     def compose(self) -> ComposeResult:
         yield Header()
         yield Footer()
+        yield Container(
+            AppUI(self, id="app_ui")
+            , id="app_interface"
+        )
+
+        
