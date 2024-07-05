@@ -12,9 +12,9 @@ class AppUI(Static):
             self.my_app = my_app
             
         def compose(self) -> ComposeResult:
-            
+            self.tabs = TabsMain(self.my_app, id="tabs")
 
             yield Vertical(
-                
-                id="app_ui"
+                self.tabs
+                , id="app_ui"
             )
