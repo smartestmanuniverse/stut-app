@@ -16,6 +16,10 @@ logging.basicConfig(
 )
 
 class StutApp(App):
+    """ The main application class """
+
+    # Textual-CSS files to load
+    CSS_PATH = ["UI/styles/app.tcss"]
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
