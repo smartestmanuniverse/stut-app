@@ -1,2 +1,2 @@
 # stut-app
-unerversal translator app
+unirversal translator app
