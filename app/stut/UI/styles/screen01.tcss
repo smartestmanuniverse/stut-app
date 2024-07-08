@@ -1,0 +1,59 @@
+Screen {
+    align: center middle;
+}
+
+BSOD {
+    align: center middle;
+    # background: blue;
+    # color: white;
+}
+
+BSOD>Static {
+    width: 100%;
+}
+
+#title {
+    content-align-horizontal: center;
+    text-style: reverse;
+}
+
+#any-key {
+    content-align-horizontal: center;
+}
+
+#username_field {
+    align: center top;
+    height: 3;
+    min-width: 80;
+    width: auto;
+    text-align: center;
+    content-align: center middle;
+}
+
+
+#password_field {
+    align: center top;
+    height: 3;
+    min-width: 80;
+    width: auto;
+    text-align: center;
+    content-align: center middle;
+}
+
+#login_button {
+    align: center bottom;
+    min-width: 80;
+    width: auto;
+    height: 3;
+    # background: blue;
+    # color: white;
+    text-style: bold;
+    text-align: center;
+    content-align: center middle;
+}
+
+#login_form {
+    align: center top;
+    width: 100%;
+    content-align-horizontal: center;
+}
